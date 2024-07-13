@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD Fitness Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1>TD Fitness</h1>
+            </div>
+            <div class="nav-right">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Programs</a>
+                <a href="#">Membership</a>
+                <a href="#">Testimonials</a>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>GET HEALTHY BODY WITH <br>THE PERFECT EXERCISE</h2>
+                <h6></h6><p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h6></p></i>
+                <button class="cta-btn">GET STARTED</button>
+                <button class="cta-btn">WATCH VIDEO</button>
+            </div>
+            <div class="hero-images">
+                <img src="images/image1.jpg" alt="Fitness Image 1">
+                <!-- <img src="images/image2.jpg" alt="Fitness Image 2"> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs">
+        <div class="programs-content">
+            <h2>THE BEST PROGRAM OFFER FOR YOU</h2>
+            <p><i>Our programs are tailored to help you achieve your fitness goals effectively and efficiently.</p></i>
+        </div>
+        <div class="program-cards">
+            <div class="program-card">
+                <img src="images/image3.jpg" alt="Program 1">
+                <h3>Weight Loss</h3>
+                <p>Comprehensive programs to help you shed those extra pounds.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+            <div class="program-card">
+                <img src="images/gym.jpg" alt="Program 2">
+                <h3>Strength Training</h3>
+                <p>Build muscle and strength with our expert-guided programs.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+            <div class="program-card">
+                <img src="images/yoga.jpg" alt="Program 3">
+                <h3>Yoga Classes</h3>
+                <p>Improve flexibility and reduce stress with our yoga classes.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+            <div class="program-card">
+                <img src="images/image2.jpg" alt="Program 4">
+                <h3>Cardio Workouts</h3>
+                <p>Enhance cardiovascular health with our cardio routines.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="why-choose-content">
+            <h2>WHY SHOULD PEOPLE CHOOSE TDFitness SERVICES?</h2>
+            <ul>
+                <li>Expert trainers and personalized fitness plans</li>
+                <li>State-of-the-art equipment and facilities</li>
+                <li>Flexible membership plans tailored to your needs</li>
+            </ul>
+            <button class="cta-btn">JOIN TODAY</button>
+        </div>
+        <div class="why-choose-image">
+            <img src="images/image4.jpg" alt="Why Choose Us">
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <!-- <section class="plans">
+        <h2>CHOOSE THE BEST PLAN</h2>
+        <div class="plan-buttons">
+            <button class="plan-btn">Monthly</button>
+            <button class="plan-btn">Annual</button>
+        </div>
+        <div class="plan-cards">
+            <div class="plan-card">
+                <h3>Basic Plan</h3>
+                <p>$29.99/month</p>
+                <ul>
+                    <li>Access to gym facilities</li>
+                    <li>2 personal training sessions</li>
+                    <li>Group classes</li>
+                    <li>Free parking</li>
+                    <li>24/7 Access</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Standard Plan</h3>
+                <p>$49.99/month</p>
+                <ul>
+                    <li>Access to gym facilities</li>
+                    <li>5 personal training sessions</li>
+                    <li>Group classes</li>
+                    <li>Free parking</li>
+                    <li>Access to sauna</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Premium Plan</h3>
+                <p>$69.99/month</p>
+                <ul>
+                    <li>Access to all facilities</li>
+                    <li>Unlimited personal training</li>
+                    <li>All group classes</li>
+                    <li>Free parking</li>
+                    <li>Access to VIP lounge</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+        </div>
+    </section> -->
+    <section id="plans" class="plans">
+        <h2>CHOOSE THE BEST PLAN</h2>
+        <div class="plan-toggle">
+            <label class="switch">
+                <input type="checkbox" id="planToggle">
+                <span class="slider round"></span>
+                <span class="toggle-label">Monthly</span>
+                <span class="toggle-label">Annual</span>
+            </label>
+        </div>
+        <div id="monthlyPlans" class="plan-cards">
+            <div class="plan-card">
+                <h3>Basic Plan</h3>
+                <p>$20/month</p>
+                <ul>
+                    <li>Access to gym</li>
+                    <li>1 personal training session</li>
+                    <li>Group classes</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Locker included</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Standard Plan</h3>
+                <p>$35/month</p>
+                <ul>
+                    <li>Access to gym</li>
+                    <li>3 personal training sessions</li>
+                    <li>All group classes</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Locker included</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Premium Plan</h3>
+                <p>$50/month</p>
+                <ul>
+                    <li>Access to gym</li>
+                    <li>Unlimited personal training</li>
+                    <li>All group classes</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Locker and towel service</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+        </div>
+        <div id="annualPlans" class="plan-cards hidden">
+            <div class="plan-card">
+                <h3>Basic Plan</h3>
+                <p>$200/year</p>
+                <ul>
+                    <li>Access to gym</li>
+                    <li>2 personal training sessions</li>
+                    <li>Group classes</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Locker included</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Standard Plan</h3>
+                <p>$350/year</p>
+                <ul>
+                    <li>Access to gym</li>
+                    <li>6 personal training sessions</li>
+                    <li>All group classes</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Locker included</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="plan-card">
+                <h3>Premium Plan</h3>
+                <p>$500/year</p>
+                <ul>
+                    <li>Access to gym</li>
+                    <li>Unlimited personal training</li>
+                    <li>All group classes</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Locker and towel service</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>TESTIMONIALS</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"TD Fitness transformed my life. The trainers are amazing and the facilities are top-notch!" - John Doe</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"The best gym experience I've ever had. Highly recommend TD Fitness to everyone!" - Jane Smith</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Fantastic environment and excellent services. I achieved my fitness goals with ease!" - Mark Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section company">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Why Us</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Partnership</a></li>
+                </ul>
+            </div>
+            <div class="footer-section categories">
+                <h3>CATEGORIES</h3>
+                <ul>
+                    <li><a href="#">Basic Yoga</a></li>
+                    <li><a href="#">Strength Training</a></li>
+                    <li><a href="#">Body Building</a></li>
+                    <li><a href="#">Weight Loss</a></li>
+                </ul>
+            </div>
+            <div class="footer-section help">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-us">
+                <h3>CONTACT US</h3>
+                <div id="map"></div>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat - Sun: Closed</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="cta-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('planToggle').addEventListener('change', function() {
+            if (this.checked) {
+                document.getElementById('monthlyPlans').classList.add('hidden');
+                document.getElementById('annualPlans').classList.remove('hidden');
+            } else {
+                document.getElementById('monthlyPlans').classList.remove('hidden');
+                document.getElementById('annualPlans').classList.add('hidden');
+            }
+        });
+
+        // Add CTA Active Class
+        document.querySelectorAll('.cta-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.cta-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        window.addEventListener('resize', function() {
+    // Update styles or perform actions based on window size
+});
+// Example: Checking if the device is a mobile device
+const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+if (isMobile) {
+    // Adjust behavior for mobile devices
+}
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+menuToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const lazyLoad = function() {
+        lazyImages.forEach(function(img) {
+            if (img.getBoundingClientRect().top <= window.innerHeight && img.getBoundingClientRect().bottom >= 0) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+            }
+        });
+    };
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+document.getElementById('signup-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    alert('CTA button clicked! Taking you to the next step.');
+    // Add your custom logic here, like opening a modal or redirecting to another page
+});
+
+
+
+    </script>
+</body>
+</html>
